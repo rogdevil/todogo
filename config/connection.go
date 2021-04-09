@@ -6,14 +6,14 @@ var DB *gorm.DB
 
 func Init() *gorm.DB {
 	db, err := gorm.Open(
-		"postgres", 
-		"host=postgrestodo port=5432 user=admin dbname=tododb password=123 sslmode=disabled"
+		"postgres",
+		"host=postgrestodo port=5432 user=admin dbname=tododb password=123 sslmode=disabled",
 	)
 	if err != nil {
 		panic(err.Error())
 	}
 
-	Db = db
+	DB = db
 
 	return DB
 }
