@@ -4,9 +4,9 @@ import (
 	"time"
 
 	jwtapple2 "github.com/appleboy/gin-jwt/v2"
-	"github.com/calo001/todoAPI/config"
-	"github.com/calo001/todoAPI/model"
 	"github.com/gin-gonic/gin"
+	"github.com/rogdevil/todo/config"
+	"github.com/rogdevil/todo/model"
 )
 
 func SetupAuth() (*jwtapple2.GinJWTMiddleware, error) {
